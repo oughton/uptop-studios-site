@@ -1,0 +1,51 @@
+<section class="section">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb" style="color:var(--muted)"><a href="{{root}}">Home</a> / Contact</nav>
+    <span class="eyebrow">Contact</span>
+    <h1>Let's make something.</h1>
+    <p class="lead" style="margin-bottom:48px">Tell us a little about your project and we'll come back with availability and a fixed quote, usually within one working day.</p>
+
+    <div class="contact-grid">
+      <form class="form" id="enquiry" data-to="{{email}}" novalidate>
+        <fieldset class="chips">
+          <legend>What are you planning?</legend>
+          <label><input type="checkbox" name="type" value="Video podcast"><span>Video podcast</span></label>
+          <label><input type="checkbox" name="type" value="Audio podcast"><span>Audio podcast</span></label>
+          <label><input type="checkbox" name="type" value="Corporate / talking head"><span>Corporate / talking head</span></label>
+          <label><input type="checkbox" name="type" value="Music recording"><span>Music recording</span></label>
+          <label><input type="checkbox" name="type" value="Live session"><span>Live session</span></label>
+          <label><input type="checkbox" name="type" value="Photography"><span>Photography</span></label>
+          <label><input type="checkbox" name="type" value="Dry hire"><span>Dry hire</span></label>
+        </fieldset>
+        <div class="two">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-company">Company <span class="muted">(optional)</span></label><input id="f-company" name="company" autocomplete="organization"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-phone">Phone <span class="muted">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-date">Preferred date(s)</label><input id="f-date" name="date" placeholder="e.g. w/c 12 January, flexible"></div>
+          <div class="field"><label for="f-people">People on camera / in session</label><select id="f-people" name="people"><option value="">Select</option><option>1</option><option>2</option><option>3–4</option><option>5+ / band</option></select></div>
+        </div>
+        <div class="field"><label for="f-budget">Budget <span class="muted">(optional)</span></label><select id="f-budget" name="budget"><option value="">Select</option><option>Under £500</option><option>£500–£1,000</option><option>£1,000–£2,500</option><option>£2,500+</option><option>Not sure yet</option></select></div>
+        <div class="field"><label for="f-msg">About the project</label><textarea id="f-msg" name="message" placeholder="Format, number of episodes or deliverables, deadlines, anything else we should know"></textarea></div>
+        <div><button class="btn btn-primary" type="submit">Send enquiry</button></div>
+        <p class="form-note">This opens your email app with your enquiry filled in, ready to send.</p>
+        <p id="form-ok" class="form-note" hidden>Thanks! If your email app didn't open, please email us at <a href="mailto:{{email}}">{{email}}</a>.</p>
+      </form>
+
+      <aside class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:{{email}}">{{email}}</a></p>
+        <h3>Location</h3>
+        <p>Near St Albans, Hertfordshire.<br>A short taxi ride from St Albans City, Harpenden and Hemel Hempstead stations.<br><a class="link-arrow" href="{{root}}the-studio/#getting-here">Getting here</a></p>
+        <h3>Viewings</h3>
+        <p>You're welcome to visit before booking. Just ask.</p>
+        <h3>Follow</h3>
+        <p><a href="https://www.instagram.com/up_top_studio/" rel="noopener" target="_blank">Instagram</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
